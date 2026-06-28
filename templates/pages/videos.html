@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ویدیوها | تیرا استودیو{% endblock %}
+{% block description %}نمونه ویدیوهای دوبله شده توسط استودیو تیرا - دوبله فیلم، سریال، انیمیشن و مستند{% endblock %}
+{% block og_title %}ویدیوها | تیرا استودیو{% endblock %}
+{% block og_description %}نمونه ویدیوهای دوبله شده توسط استودیو تیرا{% endblock %}
+{% block canonical %}https://tirastudio.ir/videos/{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title fade-up" data-lang-inline="fa">ویدیوها</h1>
+        <h1 class="page-title fade-up" data-lang-inline="en">Videos</h1>
+    </div>
+</section>
+
+<!-- Videos Grid -->
+<section class="section" style="padding-top: 40px;">
+    <div class="container">
+        <div class="videos-grid two-col fade-up delay-2">
+            <div class="video-card">
+                <div class="video-embed">
+                    <video controls preload="metadata" poster="">
+                        <source src="{% static 'video/vid_1.mp4' %}" type="video/mp4">
+                        <span data-lang-inline="fa">مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند</span>
+                        <span data-lang-inline="en">Your browser does not support video playback</span>
+                    </video>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-embed">
+                    <video controls preload="metadata" poster="">
+                        <source src="{% static 'video/vid_2.mp4' %}" type="video/mp4">
+                        <span data-lang-inline="fa">مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند</span>
+                        <span data-lang-inline="en">Your browser does not support video playback</span>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

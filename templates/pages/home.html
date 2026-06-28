@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}تیرا استودیو | استودیو تخصصی دوبله و صداگذاری{% endblock %}
+{% block description %}تیرا استودیو - استودیو تخصصی دوبله فیلم، سریال، انیمیشن و مستند با بیش از ده سال تجربه و ۵۰۰ پروژه موفق{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-video-wrapper">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+            <source src="{% static 'video/Trailer.mp4' %}" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge fade-up" data-lang-inline="fa">استودیو تخصصی دوبله</div>
+        <div class="hero-badge fade-up" data-lang-inline="en">Professional Dubbing Studio</div>
+        <h1 class="hero-title fade-up delay-1">
+            <span class="hero-title-line" data-lang-inline="fa">صدایی که</span>
+            <span class="hero-title-line" data-lang-inline="en">The Voice That</span>
+            <span class="hero-title-line hero-title-accent" data-lang-inline="fa">داستان می‌سازد</span>
+            <span class="hero-title-line hero-title-accent" data-lang-inline="en">Creates Stories</span>
+        </h1>
+        <p class="hero-subtitle fade-up delay-2" data-lang-inline="fa">
+            با بیش از ده سال تجربه در دوبله فیلم، سریال، انیمیشن و مستند،
+            صداهایی ماندگار خلق می‌کنیم.
+        </p>
+        <p class="hero-subtitle fade-up delay-2" data-lang-inline="en">
+            With over a decade of experience in dubbing films, series, animation and documentaries,
+            we create lasting voices.
+        </p>
+        <div class="hero-buttons fade-up delay-3">
+            <a href="{% url 'portfolio' %}" class="btn btn-primary">
+                <span data-lang-inline="fa">تصاویر</span>
+                <span data-lang-inline="en">Images</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="{% url 'contact' %}" class="btn btn-secondary">
+                <span data-lang-inline="fa">تماس با ما</span>
+                <span data-lang-inline="en">Contact Us</span>
+            </a>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span data-lang-inline="fa">اسکرول کنید</span>
+        <span data-lang-inline="en">Scroll Down</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- About + Portfolio Combined Section -->
+<section class="section about-showcase" id="about">
+    <div class="about-showcase-container">
+        <!-- Left: Microphone -->
+        <div class="about-mic-section fade-up">
+            <div class="mic-visual">
+                <div class="mic-ring-large"></div>
+                <div class="mic-ring-medium"></div>
+                <div class="mic-ring-small"></div>
+                <div class="mic-glow-bg"></div>
+                <img src="{% static 'images/mic.png' %}" alt="میکروفون" class="mic-main-image" width="400" height="260">
+                <div class="mic-sound-waves">
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Center: Content -->
+        <div class="about-content-section fade-up delay-1">
+            <span class="section-tag" data-lang-inline="fa">معرفی</span>
+            <span class="section-tag" data-lang-inline="en">Introduction</span>
+            
+            <h2 class="about-main-title">
+                <span data-lang-inline="fa">صدایی که</span>
+                <span data-lang-inline="en">The Voice That</span>
+                <br>
+                <span class="text-accent" data-lang-inline="fa">داستان می‌سازد</span>
+                <span class="text-accent" data-lang-inline="en">Creates Stories</span>
+            </h2>
+            
+            <div class="about-description-box">
+                <p data-lang-inline="fa">
+                    تیرا استودیو با هدف ارائه خدمات حرفه‌ای دوبله و صداگذاری تأسیس شده است.
+                    تیم ما متشکل از بهترین گویندگان و متخصصان صدا با تجربه‌ای درخشان در پروژه‌های
+                    ملی و بین‌المللی است.
+                </p>
+                <p data-lang-inline="en">
+                    Tira Studio was founded with the goal of providing professional dubbing and
+                    voice-over services. Our team consists of the best voice actors and sound
+                    specialists with brilliant experience in national and international projects.
+                </p>
+            </div>
+            
+            <div class="about-stats-vertical">
+                <div class="stat-item-vertical">
+                    <span class="stat-number-vertical" data-count="500">0</span>
+                    <span class="stat-plus-vertical">+.</span>
+                    <span class="stat-label-vertical" data-lang-inline="fa">پروژه موفق</span>
+                    <span class="stat-label-vertical" data-lang-inline="en">Projects</span>
+                </div>
+                <div class="stat-item-vertical">
+                    <span class="stat-number-vertical" data-count="10">0</span>
+                    <span class="stat-plus-vertical">+.</span>
+                    <span class="stat-label-vertical" data-lang-inline="fa">سال تجربه</span>
+                    <span class="stat-label-vertical" data-lang-inline="en">Years</span>
+                </div>
+                <div class="stat-item-vertical">
+                    <span class="stat-number-vertical" data-count="50">0</span>
+                    <span class="stat-plus-vertical">+.</span>
+                    <span class="stat-label-vertical" data-lang-inline="fa">گوینده حرفه‌ای</span>
+                    <span class="stat-label-vertical" data-lang-inline="en">Artists</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right: Portfolio Carousel -->
+        <div class="about-portfolio-section fade-up delay-2">
+            <div class="mini-carousel" id="miniCarousel">
+                <div class="mini-carousel-track">
+                    <div class="mini-carousel-item" data-index="0">
+                        <img src="{% static 'images/portfolio/Artboard 1 copy 6.png' %}" alt="نمونه کار" loading="lazy">
+                    </div>
+                    <div class="mini-carousel-item" data-index="1">
+                        <img src="{% static 'images/portfolio/Artboard 1 copy 5.png' %}" alt="نمونه کار" loading="lazy">
+                    </div>
+                    <div class="mini-carousel-item" data-index="2">
+                        <img src="{% static 'images/portfolio/Artboard 1 copy 4.png' %}" alt="نمونه کار" loading="lazy">
+                    </div>
+                    <div class="mini-carousel-item active" data-index="3">
+                        <img src="{% static 'images/portfolio/Artboard 1 copy 3.png' %}" alt="نمونه کار" loading="lazy">
+                    </div>
+                    <div class="mini-carousel-item" data-index="4">
+                        <img src="{% static 'images/portfolio/Artboard 1 copy 2.png' %}" alt="نمونه کار" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="mini-carousel-nav">
+                    <button class="mini-carousel-btn mini-next" aria-label="بعدی">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <button class="mini-carousel-btn mini-prev" aria-label="قبلی">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Videos Preview -->
+<section class="section videos" id="videos">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag fade-up" data-lang-inline="fa">ویدیوها</span>
+            <span class="section-tag fade-up" data-lang-inline="en">Videos</span>
+            <h2 class="section-title fade-up delay-1">
+                <span class="text-accent" data-lang-inline="fa">ویدیوها</span>
+                <span class="text-accent" data-lang-inline="en">Videos</span>
+            </h2>
+        </div>
+        <div class="videos-grid two-col fade-up delay-2">
+            <a href="{% url 'videos' %}" class="video-card video-preview-card">
+                <div class="video-embed">
+                    <img src="{% static 'images/vid_1_poster.jpg' %}" alt="پیش‌نمایش ویدیوی دوبله" loading="lazy">
+                    <div class="play-overlay">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3 data-lang-inline="fa">نمونه دوبله فیلم</h3>
+                    <h3 data-lang-inline="en">Film Dubbing Sample</h3>
+                    <span class="video-tag" data-lang-inline="fa">دوبله فارسی</span>
+                    <span class="video-tag" data-lang-inline="en">Persian Dubbing</span>
+                </div>
+            </a>
+            <a href="{% url 'videos' %}" class="video-card video-preview-card">
+                <div class="video-embed">
+                    <img src="{% static 'images/vid_2_poster.jpg' %}" alt="پیش‌نمایش ویدیوی صداگذاری" loading="lazy">
+                    <div class="play-overlay">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3 data-lang-inline="fa">صداگذاری و دوبله</h3>
+                    <h3 data-lang-inline="en">Voice Over & Dubbing</h3>
+                    <span class="video-tag" data-lang-inline="fa">صداگذاری</span>
+                    <span class="video-tag" data-lang-inline="en">Voice Over</span>
+                </div>
+            </a>
+        </div>
+        <div style="text-align:center;margin-top:40px;" class="fade-up delay-3">
+            <a href="{% url 'videos' %}" class="btn btn-primary">
+                <span data-lang-inline="fa">مشاهده همه ویدیوها</span>
+                <span data-lang-inline="en">View All Videos</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="section contact-cta-section" id="contact">
+    <div class="container">
+        <div class="contact-cta fade-up">
+            <p class="cta-desc" data-lang-inline="fa">برای مشاوره و سفارش پروژه با ما تماس بگیرید</p>
+            <p class="cta-desc" data-lang-inline="en">Contact us for consultation and project orders</p>
+            <a href="{% url 'contact' %}" class="cta-link">
+                <span data-lang-inline="fa">تماس با ما</span>
+                <span data-lang-inline="en">Contact Us</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

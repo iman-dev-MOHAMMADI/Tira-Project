@@ -1,0 +1,22 @@
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+*.log
+.env
+*.bat
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+staticfiles/
+media/
+
+# Large videos (upload manually to host)
+static/video/vid_1.mp4
+static/video/vid_2.mp4
