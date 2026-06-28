@@ -7,7 +7,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-tira-studio-pr
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['tirastudio.ir', 'www.tirastudio.ir', '*']
+ALLOWED_HOSTS = ['tirawork.ir', 'www.tirawork.ir']
 
 INSTALLED_APPS = [
     'django.contrib.staticfiles',
